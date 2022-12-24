@@ -19,7 +19,7 @@ pushListItem(bList, output);
 const addBtn = document.querySelector('.addBtn');
 
 addBtn.addEventListener('click', () => {
-  collection.addBooks(bookName, author);
+  collection.addingBooks(bookName, author);
   bList = JSON.parse(localStorage.getItem('booksList'));
   pushListItem(bList, output);
   form.reset();
