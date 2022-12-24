@@ -3,13 +3,13 @@ export default class BookList {
     this.books = [];
   }
 
-  checkBooks() {
+  checkBooks = () => {
     if (localStorage.getItem('books')) {
       this.books = JSON.parse(localStorage.getItem('books'));
     }
   }
 
-  saveBooks() {
+  saveBooks = () => {
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 }
