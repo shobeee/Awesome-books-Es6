@@ -10,11 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/shobeee/Awesome-books-Es6.git"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shobeee/Awesome-books-Es6/issues"
   },
-  "homepage": "https://github.com/shobeee/Awesome-books-Es6#readme"
+  "homepage": "https://github.com/shobeee/Awesome-books-Es6#readme",
+  "type": "module"
+
 }
+
+  
+
