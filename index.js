@@ -4,7 +4,7 @@ import Collection from './modules/addRemoveBtn.js';
 
 import { showListSection, showAddSection, showContactSection } from './modules/dom.js';
 
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from './modules/luxon/build/es6/luxon.js';
 
 const book = 'name';
 const bookName = document.getElementById(book);

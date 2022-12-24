@@ -1,4 +1,4 @@
-export default function pushListItem(bookList, output) {
+ const pushListItem = (bookList, output) => {
   let bookHtml = '';
   const booksArray = bookList;
   if (booksArray !== null || booksArray.length !== 0) {
@@ -11,3 +11,4 @@ export default function pushListItem(bookList, output) {
   }
   output.innerHTML = bookHtml;
 }
+export default pushListItem;
