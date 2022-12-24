@@ -4,7 +4,7 @@ import Collection from './modules/addRemoveBtn.js';
 
 import { showListSection, showAddSection, showContactSection } from './modules/dom.js';
 
-// import { DateTime } from './modules/luxon/build/es6/luxon.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 const book = 'name';
 const bookName = document.getElementById(book);
@@ -19,7 +19,7 @@ pushListItem(bList, output);
 const addBtn = document.querySelector('.addBtn');
 
 addBtn.addEventListener('click', () => {
-  collection.addingBooks(bookName, author);
+  collection.addBooks(bookName, author);
   bList = JSON.parse(localStorage.getItem('booksList'));
   pushListItem(bList, output);
   form.reset();
@@ -33,10 +33,10 @@ const navContact = document.getElementById('nav-contact');
 const listSection = document.getElementById('list');
 const addSection = document.getElementById('add-book');
 const contactSection = document.getElementById('contact');
-// const time = document.getElementById('time');
+const time = document.getElementById('time');
 
-// const timeNow = DateTime.now();
-// time.textContent = timeNow.toLocaleString(DateTime.DATETIME_MED);
+const timeNow = DateTime.now();
+time.textContent = timeNow.toLocaleString(DateTime.DATETIME_MED);
 
 navList.addEventListener('click', () => {
   showListSection(listSection, addSection, contactSection);

@@ -3,11 +3,11 @@ export default class Collection {
     this.arr = bList;
   }
 
-  UpdateStorage() {
+  UpdateLocalStorage() {
     localStorage.setItem('booksList', JSON.stringify(this.arr));
   }
 
-  addingBooks(bookName, author) {
+  addBooks(bookName, author) {
     const bookObj = {
       id: new Date().getTime().toString(),
       book: bookName.value,
@@ -19,11 +19,11 @@ export default class Collection {
     } else {
       this.arr.push(bookObj);
     }
-    this.UpdateStorage();
+    this.UpdateLocalStorage();
   }
 
   removeBooks(id) {
     this.arr = this.arr.filter((e) => e.id !== id);
-    this.UpdateStorage();
+    this.UpdateLocalStorage();
   }
 }
