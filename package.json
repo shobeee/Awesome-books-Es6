@@ -10,16 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/shobeee/Awesome-books-Es6.git"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shobeee/Awesome-books-Es6/issues"
   },
-  "homepage": "https://github.com/shobeee/Awesome-books-Es6#readme"
-
+  "homepage": "https://github.com/shobeee/Awesome-books-Es6#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
 }
-
-  
-
