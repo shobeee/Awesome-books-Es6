@@ -1,4 +1,4 @@
- const pushListItem = (bookList, output) => {
+const pushListItem = (bookList, output) => {
   let bookHtml = '';
   const ArrayOfBooks = bookList;
   if (ArrayOfBooks !== null || ArrayOfBooks.length !== 0) {
@@ -10,5 +10,5 @@
     bookHtml = '<li>No Book Avaiable</li>';
   }
   output.innerHTML = bookHtml;
-}
+};
 export default pushListItem;
