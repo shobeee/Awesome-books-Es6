@@ -207,8 +207,7 @@ ul {
 
 .credit-link,
 .credit-link:visited,
-.credit-link:active
-.credit-link::after {
+.credit-link:active .credit-link::after {
   color: blue;
 }
 

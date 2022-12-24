@@ -49,7 +49,7 @@ export const populateAddBookSection = () => {
   checkFormData();
 
   return addBookSection;
-}
+};
 
 export const populateContactSection = () => {
   const contactSection = document.createElement('section');
@@ -65,7 +65,7 @@ export const populateContactSection = () => {
       </ul>`;
 
   return contactSection;
-}
+};
 
 export const populateMainSection = () => {
   booksList.className = 'books-container';
@@ -75,4 +75,4 @@ export const populateMainSection = () => {
   main.appendChild(bookListSection);
   main.appendChild(populateAddBookSection());
   main.appendChild(populateContactSection());
-}
+};
